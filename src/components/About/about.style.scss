@@ -7,6 +7,9 @@
   margin-right: auto;
   // overflow: hidden;
   max-width: $max-container;
+  @include mobile {
+    padding: 0 1.5rem;
+  }
 
   &__left {
     width: 40%;

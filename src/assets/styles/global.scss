@@ -37,7 +37,7 @@ html {
   }
 
   @include mobile {
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 
@@ -98,6 +98,9 @@ iframe {
 
   @include tablet {
     padding: 1em;
+  }
+  @include mobile {
+    padding: 0;
   }
 }
 .dark-light {

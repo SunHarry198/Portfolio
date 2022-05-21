@@ -87,7 +87,7 @@ function App() {
         setLoad(false)
         setCurrent('header-nav')
         appRef.current.classList.remove('hidden')
-      }, 10000)
+      }, 7200)
     }
     preLoad()
   }, [])

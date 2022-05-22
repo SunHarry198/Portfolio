@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com'
 import { toast } from 'react-toastify'
 import './contact.style.scss'
 import plance4 from 'src/assets/images/plance-4.png'
+import plannet10 from 'src/assets/images/planet-10.png'
 
 function Contact() {
   const form = useRef()
@@ -34,6 +35,9 @@ function Contact() {
   }
   return (
     <div className="contact scroll-section hidden" id="contact-nav">
+      <div className="contact__background-bottom">
+        <img src={plannet10} alt="planet" />
+      </div>
       <div className="contact__background-plance">
         <img src={plance4} alt="plance" />
       </div>

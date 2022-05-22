@@ -23,7 +23,7 @@ export const projects = [
     suchAs:
       'Dark-light, message, send image message, notification, add friend, confirm/cancel friend, unfriend, search friend, singup/signin, update profile',
     video: '_JbfPfg1osU',
-    link: 'https://rai-chat-gxl15lchj-sunharry198.vercel.app/'
+    link: 'https://rai-chat.vercel.app/'
   },
   {
     id: '2',

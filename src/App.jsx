@@ -30,9 +30,15 @@ function App() {
       let current = ''
       sections.forEach(section => {
         const sectionTop = section.offsetTop
-        let sectionHeight = section.clientHeight / 3 + 200
+        let sectionHeight = 0
         if (section.getAttribute('id') === 'projects-nav') {
-          sectionHeight = section.clientHeight / 4
+          if (window.innerWidth <= 700) {
+            sectionHeight = section.clientHeight / 8
+          } else {
+            sectionHeight = section.clientHeight / 4
+          }
+        } else {
+          sectionHeight = section.clientHeight / 3 + 200
         }
 
         if (window.pageYOffset >= sectionTop - sectionHeight) {
@@ -87,7 +93,7 @@ function App() {
         setLoad(false)
         setCurrent('header-nav')
         appRef.current.classList.remove('hidden')
-      }, 7200)
+      }, 1000)
     }
     preLoad()
   }, [])

@@ -165,7 +165,6 @@ function Contact() {
                 value={message}
                 onChange={e => setMessage(e.target.value)}
                 placeholder="Your message"
-                minlength="20"
                 required
               ></textarea>
             </label>

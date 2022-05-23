@@ -17,6 +17,17 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  &__user-icon {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    @include lap {
+      display: none;
+    }
+    img {
+      width: 200px;
+    }
+  }
   &__left {
     position: relative;
     z-index: 1;

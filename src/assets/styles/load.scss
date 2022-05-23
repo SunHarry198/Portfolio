@@ -37,6 +37,27 @@
   }
 }
 
+.header__user-icon {
+  transform: translateY(-70px);
+  opacity: 0;
+  animation: moveY2 0.6s 1.2s forwards;
+}
+
+@keyframes moveY2 {
+  0% {
+    transform: translateY(-70px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .header__right {
   animation: moveX 1.3s ease-in-out forwards;
   transform: translateX(-100%);

@@ -93,7 +93,7 @@ function App() {
         setLoad(false)
         setCurrent('header-nav')
         appRef.current.classList.remove('hidden')
-      }, 7200)
+      }, 1000)
     }
     preLoad()
   }, [])

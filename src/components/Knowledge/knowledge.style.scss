@@ -49,6 +49,10 @@
         border: 1px solid var(--main-color);
         @include flex(center, center);
         border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+        @media only screen and (min-width: 1470px) {
+          width: 12vw;
+          height: 12vw;
+        }
         @include tablet {
           width: 19vw;
           height: 19vw;

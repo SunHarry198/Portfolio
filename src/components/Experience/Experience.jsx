@@ -39,7 +39,7 @@ function Experience() {
                   Comma Media Company.
                 </section>
                 <span>
-                  25/7 Nguyen Binh Khiem, Ben Nghe Ward, Dist 1, HCMC, VietNam
+                  25/7 Nguyen Binh Khiem, Ben Nghe Ward, Dist 1, HCMC, VietNam.
                 </span>
                 <section className="experience__right--content_item-right_work">
                   Intern Front-end.(11/2019-01/2020)
@@ -82,7 +82,7 @@ function Experience() {
                   Vinasay Company.
                 </section>
                 <span>
-                  171 Nguyen Thi Thap, Tan Phu Ward, Dist 7, HCMC, VietNam
+                  171 Nguyen Thi Thap, Tan Phu Ward, Dist 7, HCMC, VietNam.
                 </span>
                 <section className="experience__right--content_item-right_work">
                   Fresher Front-end.(5/2020 - 10/2020)
@@ -90,8 +90,81 @@ function Experience() {
                 <ul>
                   <li>
                     <article>Main responsibilities:</article>- Plan an idea and
-                    design Vinasay Website with Illustrator.
-                    <br />- Convert .ai files to HTML/CSS/JS, responsive.
+                    design Vinasay Website with Illustrator. <br />- Convert
+                    .psd files, .ai files to HTML/CSS/JS, responsive.
+                  </li>
+                  <li>
+                    <article>Recognition and Gains:</article>- Given good
+                    recognition by leader in terms of Front-end. <br />
+                    -I was accepted as a full-time employee after my internship,
+                    but I turned it down for some personal reasons.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="experience__right--content_item">
+            <div className="experience__right--content_item-left">
+              <svg
+                className="line-1 svg2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 81.39 538.34"
+              >
+                <polyline
+                  className="cls-1"
+                  points="53.68 0.26 0.68 88.55 80.68 140.26 6.68 245.06 80.68 357.26 54.89 434.08 54.89 528.76"
+                />
+                <path
+                  className="cls-2"
+                  d="M52.79,518.56c12.12,0,19.17,9.2,13.8,13s-9.2,6.9-13,6.14-13.81-1.54-13-6.14S47.42,518.56,52.79,518.56Z"
+                />
+              </svg>
+            </div>
+            <div className="experience__right--content_item-right">
+              <div>
+                <section className="experience__right--content_item-right_title">
+                  Medpro Company.
+                </section>
+                <span>74 Thành Thái, 12 Ward, Dist 10, HCMC, VietNam.</span>
+                <section className="experience__right--content_item-right_work">
+                  Junior Front-end.(6/2022 - 8/2023)
+                </section>
+                <ul>
+                  <li>
+                    <article>Main responsibilities:</article>- In change
+                    Front-End Medpro Backoffice (Manager Medpro website, Medpro
+                    App)
+                    <br /> - Update and add new features in the web application
+                    (
+                    <a
+                      href="https://medpro.vn"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="cursor_small"
+                    >
+                      Medpro V1
+                    </a>
+                    ,
+                    <a
+                      href="https://allnew-v2.medpro.com.vn"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="cursor_small"
+                    >
+                      Medpro V2
+                    </a>
+                    ,
+                    <a
+                      href="https://umc.medpro.com.vn"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="cursor_small"
+                    >
+                      UMC Website
+                    </a>
+                    ,Medpro CSKH , Medpro Backoffice ).
+                    <br />- Convert figma files to NextJS, RESTful API, Build
+                    Medpro Backoffice testing, Build Medpro testing...
                   </li>
                   <li>
                     <article>Recognition and Gains:</article>- Given good

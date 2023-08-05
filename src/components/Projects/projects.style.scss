@@ -5,6 +5,16 @@
   max-width: $max-container;
   margin-left: auto;
   margin-right: auto;
+
+  .mySwiper {
+    padding-top: 15px;
+    .swiper-pagination-progressbar-fill {
+      background: var(--title-color) !important;
+    }
+    .swiper-pagination-progressbar {
+      background: var(--bg-opacity) !important;
+    }
+  }
   @include mobile {
     padding: 0 1.5rem;
   }
@@ -20,63 +30,68 @@
     @include flex(stretch, space-between);
     flex-wrap: wrap;
     max-height: 100%;
+    :global {
+      .swiper-slide {
+        padding: 30px;
+      }
+    }
+
     &--item {
-      width: 30%;
-      margin-bottom: 2.5rem;
-      padding: 1rem;
-      background: var(--bg-opacity);
-      border-radius: 20px;
-      box-shadow: 0 0 20px 4px rgba(131, 131, 131, 0.5);
-      position: relative;
-      overflow: hidden;
+      // width: 30%;
+      height: 100%;
       z-index: 2;
-      box-sizing: border-box;
-      transition: box-shadow 0.3s ease;
       max-height: 100%;
       font-size: 18px;
-      @include lap {
-        width: 47%;
+      padding: 1rem;
+      &_card {
+        position: relative;
+        padding: 0.5rem;
+        background: var(--bg-opacity);
+        border-radius: 20px;
+        box-shadow: 0 0 15px 5px rgba(131, 131, 131, 0.3);
+        box-sizing: border-box;
+        transition: box-shadow 0.3s ease;
+        height: 100%;
+        overflow: hidden;
+        @include tablet {
+          font-size: 12px;
+        }
+        &:hover {
+          box-shadow: 0 0 15px 7px rgba(131, 131, 131, 0.4);
+        }
+        &:hover::after {
+          opacity: 1;
+          animation-name: mask-ani;
+        }
+        &::after {
+          content: '';
+          width: 210%;
+          height: 170px;
+          background-image: linear-gradient(
+            to bottom,
+            rgba(179, 255, 253, 0) 0%,
+            rgba(255, 255, 253, 0.3) 45%,
+            rgba(255, 255, 253, 0.3) 55%,
+            rgba(179, 255, 253, 0) 100%
+          );
+          transform-origin: center center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          opacity: 0;
+        }
       }
-      @include mobile {
-        width: 100%;
-      }
-      @include tablet {
-        font-size: 12px;
-        margin-bottom: 3.5rem;
-      }
-      &:hover {
-        box-shadow: 0 0 40px 20px rgba(131, 131, 131, 0.5);
-      }
-      &:hover::after {
-        opacity: 0;
-      }
-      &::after {
-        content: '';
-        width: 170%;
-        height: 170px;
-        background-image: linear-gradient(
-          to bottom,
-          rgba(179, 255, 253, 0) 0%,
-          rgba(255, 255, 253, 0.3) 45%,
-          rgba(255, 255, 253, 0.3) 55%,
-          rgba(179, 255, 253, 0) 100%
-        );
-        transform-origin: center center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        animation-name: mask-ani;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-      }
+
       @keyframes mask-ani {
         0% {
-          transform: rotate(-36deg) translate(-35%, -430px);
+          transform: rotate(-36deg) translate(-40%, -430px);
         }
         60%,
         100% {
-          transform: rotate(-36deg) translate(-35%, 300%);
+          transform: rotate(-36deg) translate(-40%, 300%);
         }
       }
 
@@ -103,6 +118,9 @@
             color: rgba(34, 149, 249);
             font-weight: 700;
           }
+          > section {
+            font-size: 0.9rem;
+          }
         }
         &-button {
           @include flex(center, space-between);
@@ -128,6 +146,9 @@
             overflow: hidden;
             z-index: 3;
             &.demo-front-end {
+              width: 100%;
+            }
+            &.full {
               width: 100%;
             }
             &:active {
@@ -185,7 +206,8 @@
             &:first-child {
               background: rgba(251, 0, 46, 0.864);
             }
-            &:nth-child(2) {
+            &:nth-child(2),
+            &.live {
               background: rgba(7, 134, 245, 0.821);
             }
           }

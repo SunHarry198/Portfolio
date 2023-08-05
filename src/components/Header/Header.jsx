@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.style.scss'
 import CV from 'src/assets/images/TRAN-VAN-HUNG-FRESHER-FRONT-END.pdf'
-import user from 'src/assets/images/user.png'
+// import user from 'src/assets/images/user.png'
 
 function Header() {
   return (
@@ -9,9 +9,9 @@ function Header() {
       {/* <div className="header__plance">
         
       </div> */}
-      <div className="header__user-icon">
+      {/* <div className="header__user-icon">
         <img src={user} alt="user" />
-      </div>
+      </div> */}
       <div className="header__left">
         <div className="header__left--content">
           <div className="header__left--content--title">Hello, I'm Hung</div>

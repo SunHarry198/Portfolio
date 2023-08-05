@@ -161,7 +161,7 @@ svg {
   background: #fff;
   pointer-events: none;
   z-index: 999;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, left 0.05s ease-in, top 0.05s ease-in;
   @include flex(center, center);
   @media screen and (max-width: $lap-width) and (min-height: 1250px) {
     display: none;

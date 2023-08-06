@@ -22,9 +22,7 @@ function Knowledge() {
             ReacJs <br />
             (Hook)
           </div>
-          <div className="knowledge__left--content_item cursor_small">
-            NextJS
-          </div>
+          <div className="knowledge__left--content_item">NextJS</div>
         </div>
       </div>
       <div className="knowledge__right">

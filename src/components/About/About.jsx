@@ -14,7 +14,7 @@ function About() {
           <div className="about__right--title">About Me</div>
           <div className="about__right--content">
             <div>
-              Good day, everyone! I'm Tran Van Hung, I'm 24 years old and I'm
+              Good day, everyone! I'm Tran Van Hung, I'm 25 years old and I'm
               from DakLak. I'm Junior Front-end Developer. I have more than 1
               year experience of working as a web developer at HCMC.
             </div>
